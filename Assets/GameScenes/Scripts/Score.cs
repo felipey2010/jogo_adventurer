@@ -17,10 +17,8 @@ public class Score : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(player.health > 0)
-        {
-            score++;
-        }
+        
+        score++;
    
         Destroy(other.gameObject);
     }
